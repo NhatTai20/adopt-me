@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import Results from "./Results";
 import useBreedList from "./useBreedList";
-import Results from "./Result";
+
 const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 
 const SearchParams = () => {
@@ -12,7 +13,7 @@ const SearchParams = () => {
 
   useEffect(() => {
     requestPets();
-  }, []);
+  }, []); 
 
   async function requestPets() {
     const res = await fetch(

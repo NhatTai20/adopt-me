@@ -15,7 +15,7 @@ const App = () => {
           <ThemeContext.Provider value={theme}>
             <BrowserRouter>
               <header>
-                <Link to="/">Adopt Me!</Link>
+                <Link to="/">Adopt Me 123123!</Link>
               </header>
               <Routes>
                 <Route path="/details/:id" element={<Details />} />
